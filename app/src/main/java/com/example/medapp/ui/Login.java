@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,29 +20,25 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Register extends AppCompatActivity {
-    EditText mName, mSurname, mEmail, mNumber, mPassword;
-    Button mRegister;
-    TextView mLoginRedirect;
+public class Login extends AppCompatActivity {
+    EditText  mEmail, mPassword;
+    Button mLogin;
+    TextView mRegisterRedirect;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
-
-        mName           = findViewById(R.id.name);
-        mSurname        = findViewById(R.id.surname);
-        mNumber         = findViewById(R.id.number);
+        setContentView(R.layout.activity_login);
         mEmail          = findViewById(R.id.email);
         mPassword       = findViewById(R.id.password);
-        mRegister       = findViewById(R.id.register);
-        mLoginRedirect  = findViewById(R.id.loginredirect);
+        mLogin       = findViewById(R.id.login);
+        mRegisterRedirect  = findViewById(R.id.registerRedirect);
 
         fAuth           = FirebaseAuth.getInstance();
-        progressBar     = findViewById(R.id.progressBar2);
+        progressBar     = findViewById(R.id.progressBar);
 
-        mRegister.setOnClickListener(new View.OnClickListener() {
+        mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email = mEmail.getText().toString().trim();
@@ -67,26 +62,24 @@ public class Register extends AppCompatActivity {
                     return;
                 }
                 progressBar.setVisibility(View.VISIBLE);
-
-                fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            Toast.makeText(Register.this, "User created.", Toast.LENGTH_SHORT).show();
+                        if (task.isSuccessful()) {
+                            Toast.makeText(Login.this, "Logged in!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }
                         else {
-                            Toast.makeText(Register.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-
+                            Toast.makeText(Login.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
             }
         });
-        mLoginRedirect.setOnClickListener(new View.OnClickListener() {
+        mRegisterRedirect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Login.class));
+                startActivity(new Intent(getApplicationContext(), Register.class));
             }
         });
     }

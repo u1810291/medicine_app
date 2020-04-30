@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "635009886322",
+    "firebase_url": "https://medicalapp-f07c9.firebaseio.com",
+    "project_id": "medicalapp-f07c9",
+    "storage_bucket": "medicalapp-f07c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635009886322:android:901c01369ff241f6493aeb",
+        "android_client_info": {
+          "package_name": "com.example.medapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635009886322-i5a00fn210f7v7hifhklu71bb4h5pfk7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medapp",
+            "certificate_hash": "d3766715506046052701da4a33a2b8ebc2bd61e9"
+          }
+        },
+        {
+          "client_id": "635009886322-9a2ugmvfn1hsjf31vi6puanejp8kbakb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApd60y7cdaUnrs3Lr9o2CHkyAVOvLPAjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635009886322-9a2ugmvfn1hsjf31vi6puanejp8kbakb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635009886322:android:ddbdc5ac340536f7493aeb",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635009886322-6gmhiuitak0mo15ihb1mrpna0qq82us1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "d3766715506046052701da4a33a2b8ebc2bd61e9"
+          }
+        },
+        {
+          "client_id": "635009886322-9a2ugmvfn1hsjf31vi6puanejp8kbakb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApd60y7cdaUnrs3Lr9o2CHkyAVOvLPAjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635009886322-9a2ugmvfn1hsjf31vi6puanejp8kbakb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635009886322:android:598540c61fec0240493aeb",
+        "android_client_info": {
+          "package_name": "edu.medicalApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635009886322-9a2ugmvfn1hsjf31vi6puanejp8kbakb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApd60y7cdaUnrs3Lr9o2CHkyAVOvLPAjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635009886322-9a2ugmvfn1hsjf31vi6puanejp8kbakb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

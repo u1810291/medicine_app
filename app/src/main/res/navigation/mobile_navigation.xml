@@ -30,14 +30,24 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.medapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_diagnosis"
+        android:name="com.example.medapp.ui.gallery.Diagnosis"
+        android:label="@string/diagnosis"
+        tools:layout="@layout/diagnosis" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.medapp.ui.Login"
+        android:label="@string/login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.example.medapp.ui.Register"
+        android:label="@string/register"
+        tools:layout="@layout/activity_register" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.medapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_doctor"
+        android:name="com.example.medapp.ui.slideshow.SlideshowDoctor"
+        android:label="@string/doctor"
+        tools:layout="@layout/fragment_doctor" />
 </navigation>
